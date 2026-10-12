@@ -1,6 +1,6 @@
 # Transformer & Attention
 
-Transformer 是處理 Token 向量的神經網路架構。Attention 是其中整合跨Positional Information的重要機制；完整架構還包含Positional Information、Feed-Forward Network、Residual Connection 及 Normalization 等組件。
+Transformer 是處理 Token 向量的神經網路架構。Attention 是其中整合跨 Positional Information 的重要機制；完整架構還包含 Positional Information、Feed-Forward Network、Residual Connection 及 Normalization 等組件。
 
 [回到本章](README.md) · [AI Engineering 索引](../README.md)
 
@@ -54,9 +54,9 @@ Causal Mask 遮住後續位置，使自回歸模型的每個位置只能利用�
 
 ## Positional Information
 
-Attention 需要Positional Information來利用順序差異。例如「我喜歡你」與「你喜歡我」使用相同的字，排列不同，意思也不同。
+Attention 需要 Positional Information 來利用順序差異。例如「我喜歡你」與「你喜歡我」使用相同的字，排列不同，意思也不同。
 
-不同 Transformer 架構提供Positional Information的方法可能不同；關鍵是讓運算能反映 Token 的位置或相對順序。
+不同 Transformer 架構提供 Positional Information 的方法可能不同；關鍵是讓運算能反映 Token 的位置或相對順序。
 
 ## FFN、Residual 與 Normalization
 
@@ -79,7 +79,7 @@ X 是原始輸入，F(X) 是某個子層的轉換結果。相加後的表示由�
 
 - Transformer 是完整架構，Attention 是其中的機制。
 - Value 是供整合的資訊向量，Attention Output 是加權整合的結果。
-- Causal Mask 限制可參考的位置，Positional Information提供排列及順序訊息，兩者作用不同。
+- Causal Mask 限制可參考的位置，Positional Information 提供排列及順序訊息，兩者作用不同。
 - 教學中假設的 Attention 權重不能當成真實模型的解讀證據。
 
 ## 相關文件
